@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class Cassett {
+public class Cassett implements AnalogAlbum {
     private ArrayList<String> songs;
     private int currentindex;
 
@@ -13,19 +13,29 @@ public class Cassett {
         songs.add(song5);
     }
 
+    @Override
     public String play() {
-        return "";
+        return null;
     }
 
+    @Override
     public String rewind() {
-        return "";
+        return null;
     }
 
+    @Override
+    public String ffwd() {
+        return null;
+    }
+
+    @Override
     public String pause() {
-        return "";
+        return null;
     }
 
+    @Override
     public String stopEject() {
-        return "";
+        return null;
     }
+    
 }
