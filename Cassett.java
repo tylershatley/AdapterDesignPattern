@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 public class Cassett implements AnalogAlbum {
     private ArrayList<String> songs;
-    private int currentindex;
+    private int currentIndex;
 
     public Cassett(String song1, String song2, String song3, 
     String song4, String song5) {
@@ -15,27 +15,30 @@ public class Cassett implements AnalogAlbum {
 
     @Override
     public String play() {
-        return null;
+        currentIndex +=1;
+        return "Playing song " + (this.currentIndex) + ": " + songs.get(this.currentIndex - 1);
     }
 
     @Override
     public String rewind() {
-        return null;
+        currentIndex-= 1;
+        return "Rewinding to song " + (currentIndex+1);
     }
 
     @Override
     public String ffwd() {
-        return null;
+        currentIndex +=1;
+        return "Forward to song " + (currentIndex+1);
     }
 
     @Override
     public String pause() {
-        return null;
+        return "Pausing...";
     }
 
     @Override
     public String stopEject() {
-        return null;
+        return "Stopping cassett and ejecting";
     }
     
 }

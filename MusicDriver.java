@@ -28,6 +28,5 @@ public class MusicDriver {
 	public static void main(String[] args) {
 		MusicDriver mDriver = new MusicDriver();
 		mDriver.RunMusicDriver();
-		
 	}
 }
